@@ -95,8 +95,6 @@ st.write("Enter a list of YouTube URLs (videos or playlists), separated by new l
 urls_input = st.text_area("YouTube URLs", height=150)
 start_download = st.button("Start Download")
 
-st.text
-
 if start_download and urls_input:
     urls_or_playlists = [url.strip() for url in urls_input.split() if url.strip()]
     with st.spinner("Downloading and processing videos..."):
